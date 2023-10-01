@@ -86,15 +86,11 @@ class Employee
 	{
 		return (this.lastName + ", " + this.firstName + "\n  ID Number: " + this.employeeId + "\n  Salary   : $" + this.salary);
 	}
-	/* Task 3G: Add equals method */
 	
-	public Boolean equals(String name)
-	{
-		//System.out.println(name);
-		//System.out.println(this.lastName);
-		//String lastTEST = this.lastName;
-		
-		if (name == this.lastName)
+	/* Task 3G: Add equals method */
+	public boolean equals(String name)
+	{		
+		if (name.equals(this.lastName))
 		{
 			return true;
 		}
